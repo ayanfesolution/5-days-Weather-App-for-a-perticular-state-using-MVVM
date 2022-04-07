@@ -23,10 +23,9 @@
 		0444AA6827FAA274006B8943 /* NetWorkAPITwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444AA6627FAA274006B8943 /* NetWorkAPITwo.swift */; };
 		0444AA6A27FB3B90006B8943 /* FiveDaysWeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444AA6927FB3B90006B8943 /* FiveDaysWeatherForecast.swift */; };
 		0444AA6B27FB3B90006B8943 /* FiveDaysWeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444AA6927FB3B90006B8943 /* FiveDaysWeatherForecast.swift */; };
-		0444AA6D27FC3012006B8943 /* HomeScreenUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444AA6C27FC3011006B8943 /* HomeScreenUIView.swift */; };
-		0444AA6E27FC3012006B8943 /* HomeScreenUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444AA6C27FC3011006B8943 /* HomeScreenUIView.swift */; };
 		0454B6DA27FC80C8002830E9 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454B6D927FC80C8002830E9 /* common.swift */; };
 		0454B6E127FC97A8002830E9 /* WeatherPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454B6E027FC97A8002830E9 /* WeatherPageViewModel.swift */; };
+		0454B6E827FE57A6002830E9 /* Extension + ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454B6E727FE57A5002830E9 /* Extension + ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +63,9 @@
 		0444AA6027FA4309006B8943 /* CurrentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDataModel.swift; sourceTree = "<group>"; };
 		0444AA6627FAA274006B8943 /* NetWorkAPITwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkAPITwo.swift; sourceTree = "<group>"; };
 		0444AA6927FB3B90006B8943 /* FiveDaysWeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDaysWeatherForecast.swift; sourceTree = "<group>"; };
-		0444AA6C27FC3011006B8943 /* HomeScreenUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenUIView.swift; sourceTree = "<group>"; };
 		0454B6D927FC80C8002830E9 /* common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
 		0454B6E027FC97A8002830E9 /* WeatherPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPageViewModel.swift; sourceTree = "<group>"; };
+		0454B6E727FE57A5002830E9 /* Extension + ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + ViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				0444AA3227F9CB53006B8943 /* WeatherPageViewController.swift */,
+				0454B6E727FE57A5002830E9 /* Extension + ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -200,7 +200,6 @@
 		0454B6E327FCC73D002830E9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0444AA6C27FC3011006B8943 /* HomeScreenUIView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -347,11 +346,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0454B6E827FE57A6002830E9 /* Extension + ViewController.swift in Sources */,
 				0444AA5F27F9CB8A006B8943 /* NetworkAPIone.swift in Sources */,
 				0444AA6A27FB3B90006B8943 /* FiveDaysWeatherForecast.swift in Sources */,
 				0454B6E127FC97A8002830E9 /* WeatherPageViewModel.swift in Sources */,
 				0444AA3327F9CB53006B8943 /* WeatherPageViewController.swift in Sources */,
-				0444AA6D27FC3012006B8943 /* HomeScreenUIView.swift in Sources */,
 				0444AA2F27F9CB53006B8943 /* AppDelegate.swift in Sources */,
 				0444AA6727FAA274006B8943 /* NetWorkAPITwo.swift in Sources */,
 				0444AA6127FA4309006B8943 /* CurrentDataModel.swift in Sources */,
@@ -364,7 +363,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0444AA6E27FC3012006B8943 /* HomeScreenUIView.swift in Sources */,
 				0444AA6827FAA274006B8943 /* NetWorkAPITwo.swift in Sources */,
 				0444AA4627F9CB55006B8943 /* WeatherAppTests.swift in Sources */,
 				0444AA6B27FB3B90006B8943 /* FiveDaysWeatherForecast.swift in Sources */,

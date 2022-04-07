@@ -44,37 +44,5 @@ struct WeatherApiTwo {
         task.resume()
     }
     
-
-//    func fetchData(completionHandler:@escaping ([FiveDaysWeatherData]) -> Void) {
-//
-//        guard let url =  URL(string:"api.openweathermap.org/data/2.5/forecast?q=Osun&appid=\(API.key)") else {
-//      return
-//    }
-//
-//    let session = URLSession.shared
-//    let dataTask = session.dataTask(with: url, completionHandler: { (data, response, error) -> Void in
-//        if (error != nil) {
-//            print(error!)
-//        } else {
-//            let httpResponse = response as? HTTPURLResponse
-//            print(httpResponse!)
-//        }
-//        guard let data = data else {
-//            print("No Network Access")
-//            return
-//        }
-//
-//        let decoder = JSONDecoder()
-//        let fiveDaysWeatherData = try? decoder.decode([FiveDaysWeatherData].self, from: data)
-//            completionHandler(fiveDaysWeatherData!)
-//            print(fiveDaysWeatherData)
-//
-//    })
-//    dataTask.resume()
-//
-//
-//
-//}
-
     private init() {}
 }

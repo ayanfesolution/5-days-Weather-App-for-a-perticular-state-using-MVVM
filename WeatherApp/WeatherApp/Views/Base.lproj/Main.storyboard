@@ -12,28 +12,28 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="WeatherPageViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="HomeScreenUIView" customModule="WeatherApp" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ec-gt-R0t">
                                 <rect key="frame" x="0.0" y="44" width="414" height="320"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sea_sunnypng" translatesAutoresizingMaskIntoConstraints="NO" id="aIH-Nj-Z0O">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sea_cloudy" translatesAutoresizingMaskIntoConstraints="NO" id="aIH-Nj-Z0O">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="320"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HaX-52-uIi">
-                                        <rect key="frame" x="155.5" y="108" width="103.5" height="104"/>
+                                        <rect key="frame" x="142.5" y="103.5" width="129.5" height="113.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25˚" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8P4-RD-WvV">
-                                                <rect key="frame" x="7" y="0.0" width="89.5" height="60"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25˚" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8P4-RD-WvV">
+                                                <rect key="frame" x="21" y="0.0" width="87.5" height="60"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUNNY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EM3-is-Rjp">
-                                                <rect key="frame" x="0.0" y="68" width="103.5" height="36"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                <rect key="frame" x="0.0" y="68" width="129.5" height="45.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="38"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -259,7 +259,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.30588235289999999" green="0.57254901960000004" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.38362717629999998" green="0.52093607190000002" blue="0.57974714039999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="kj5-RE-ZE5" secondAttribute="trailing" constant="20" id="AzR-Cr-O6D"/>
                                     <constraint firstItem="4Ta-ou-J3H" firstAttribute="top" secondItem="g8C-d9-DDn" secondAttribute="top" constant="80" id="K0i-ph-Cgp"/>
@@ -274,7 +274,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.94671279190000002" green="0.73009711499999996" blue="0.072466157379999993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.37254901959999998" green="0.51764705879999995" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="g8C-d9-DDn" secondAttribute="bottom" id="QMe-cj-Q0j"/>
                             <constraint firstItem="0Ec-gt-R0t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SX9-8L-ggw"/>
@@ -284,17 +284,33 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Ec-gt-R0t" secondAttribute="trailing" id="eqX-HX-cvo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g8C-d9-DDn" secondAttribute="trailing" id="ow5-5t-k6d"/>
                         </constraints>
-                        <connections>
-                            <outlet property="cureentWeatherTypeName" destination="EM3-is-Rjp" id="iDR-Eg-YnS"/>
-                            <outlet property="currentWeatherDegree" destination="7Ee-ms-dXg" id="UTJ-yp-E2n"/>
-                            <outlet property="currentWeatherMax" destination="suY-tm-igR" id="NQt-zK-Jl1"/>
-                            <outlet property="currentWeatherMin" destination="2FX-Nv-kxz" id="oWf-wt-oSF"/>
-                            <outlet property="day" destination="aZq-zY-SP5" id="B34-kJ-JEp"/>
-                            <outlet property="degrees" destination="dY2-rB-N5d" id="AVW-O8-cff"/>
-                            <outlet property="weatherIcons" destination="Zlf-aI-n8v" id="fAx-bI-Nhf"/>
-                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="anx-H7-Ean"/>
+                    <connections>
+                        <outlet property="currentWeatherImage" destination="aIH-Nj-Z0O" id="1DM-Xk-aMj"/>
+                        <outlet property="currentWeatherLabel" destination="EM3-is-Rjp" id="cLZ-Iw-xIs"/>
+                        <outlet property="currentWeatherLower" destination="7Ee-ms-dXg" id="tJc-lR-FIv"/>
+                        <outlet property="currentWeatherMax" destination="suY-tm-igR" id="qTd-Ey-M5n"/>
+                        <outlet property="currentWeatherMin" destination="2FX-Nv-kxz" id="0bY-KF-FJH"/>
+                        <outlet property="dayFive" destination="aZq-zY-SP5" id="hpC-5X-hP3"/>
+                        <outlet property="dayFiveWeather" destination="dY2-rB-N5d" id="rUp-KP-AdW"/>
+                        <outlet property="dayFiveWeatherIcon" destination="Zlf-aI-n8v" id="T4T-dd-G4f"/>
+                        <outlet property="dayFour" destination="p2E-0u-zJ7" id="I1D-9b-pvc"/>
+                        <outlet property="dayFourWeather" destination="Ue4-4y-vp1" id="oVq-dj-2WU"/>
+                        <outlet property="dayFourWeatherIcon" destination="bYQ-j8-iIX" id="gnB-eb-1yz"/>
+                        <outlet property="dayOne" destination="dmJ-Hd-74p" id="n5R-Ls-0SF"/>
+                        <outlet property="dayOneWeather" destination="STH-Cv-vEd" id="74e-Yr-P9s"/>
+                        <outlet property="dayOneWeatherIcon" destination="U2u-J0-6xB" id="U4a-nA-hRQ"/>
+                        <outlet property="dayThree" destination="z6I-GD-tFx" id="WrI-BC-Nsc"/>
+                        <outlet property="dayThreeWeather" destination="zJK-k8-PTe" id="Ae4-ml-Exy"/>
+                        <outlet property="dayThreeWeatherIcon" destination="dBX-Kf-k1c" id="qbW-o2-VtT"/>
+                        <outlet property="dayTwo" destination="liO-F1-yuk" id="Z2D-Cu-TZc"/>
+                        <outlet property="dayTwoWeather" destination="6Ff-v3-f2h" id="YFB-nb-Fey"/>
+                        <outlet property="dayTwoWeatherIcon" destination="TXs-AW-mlw" id="MCN-Y6-1Yc"/>
+                        <outlet property="lowerView" destination="g8C-d9-DDn" id="zGr-QA-FHa"/>
+                        <outlet property="upperPartCurrent" destination="8P4-RD-WvV" id="qUa-Qq-5TI"/>
+                        <outlet property="upperView" destination="0Ec-gt-R0t" id="xOY-uS-5fk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -303,7 +319,7 @@
     </scenes>
     <resources>
         <image name="clear" width="13" height="13"/>
-        <image name="sea_sunnypng" width="360" height="320"/>
+        <image name="sea_cloudy" width="360" height="320"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

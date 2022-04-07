@@ -6,45 +6,43 @@
 import UIKit
 
 class WeatherPageViewController: UIViewController {
-
-    var currentDay: CurrentDayWeatherData?
-    let apiOne : WeatherApiOne = WeatherApiOne.sharedInstance
-    let apiTwo : WeatherApiTwo = WeatherApiTwo.sharedInstance
-    var fiveDaysData: FiveDaysWeatherData?
-
-    func fetchCurrentDayData() {
-        apiOne.dataParser{ [weak self] result in
-            switch result{
-               case .success(let results):
-                self?.currentDay = results
-                print(self?.currentDay!)
-            case .failure(let errors):
-                print(errors)
-            }
-        }
-    }
-    func fetchFiveDayData() {
-        apiTwo.dataParser{ [weak self] result in
-            switch result {
-            case .success(let fiveDaysWeather):
-                self?.fiveDaysData = fiveDaysWeather
-                print(self?.fiveDaysData)
-            case .failure(let errors):
-                print(errors)
-            }
-            
-        }
-    }
     
+    @IBOutlet weak var upperPartCurrent: UILabel!
+    @IBOutlet weak var currentWeatherLabel: UILabel!
+    @IBOutlet weak var currentWeatherMin: UILabel!
+    @IBOutlet weak var currentWeatherLower: UILabel!
+    @IBOutlet weak var currentWeatherMax: UILabel!
+    @IBOutlet weak var dayOne: UILabel!
+    @IBOutlet weak var dayTwo: UILabel!
+    @IBOutlet weak var dayThree: UILabel!
+    @IBOutlet weak var dayFour: UILabel!
+    @IBOutlet weak var dayFive: UILabel!
+    @IBOutlet weak var dayOneWeather: UILabel!
+    @IBOutlet weak var dayTwoWeather: UILabel!
+    @IBOutlet weak var dayThreeWeather: UILabel!
+    @IBOutlet weak var dayFourWeather: UILabel!
+    @IBOutlet weak var dayFiveWeather: UILabel!
+    @IBOutlet weak var currentWeatherImage: UIImageView!
+    @IBOutlet weak var upperView: UIView!
+    @IBOutlet weak var lowerView: UIView!
+    @IBOutlet var dayOneWeatherIcon: UIImageView!
+    @IBOutlet var dayTwoWeatherIcon: UIImageView!
+    @IBOutlet var dayThreeWeatherIcon: UIImageView!
+    @IBOutlet var dayFourWeatherIcon: UIImageView!
+    @IBOutlet var dayFiveWeatherIcon: UIImageView!
+    
+    var viewModel = WeatherPageViewModel()
+    var details : CurrentDayWeatherData?
+    var fiveDays : FiveDaysWeatherData?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        fetchCurrentDayData()
-        fetchFiveDayData()
-//        print(currentDay)
-  }
-
-
+        viewModel.delegate = self
+        viewModel.fetchCurrentDayData()
+        viewModel.fetchFiveDayData()
+    }
 }
+
+
+
 

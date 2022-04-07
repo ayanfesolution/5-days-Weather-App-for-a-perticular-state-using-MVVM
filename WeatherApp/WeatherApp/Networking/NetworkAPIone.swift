@@ -53,36 +53,5 @@ struct WeatherApiOne {
         task.resume()
     }
     
-    
-//func fetchData(completionHandler:@escaping (CurrentDayWeatherData?) -> Void) {
-//
-//    guard let url =  URL(string:"https://api.openweathermap.org/data/2.5/weather?q=Osun&appid=9365f221ba960bfa051d48840b5562be") else {
-//      return
-//    }
-//
-//    let session = URLSession.shared
-//    let dataTask = session.dataTask(with: url, completionHandler: { (data, response, error) -> Void in
-//        if (error != nil) {
-//            print(error!)
-//        } else {
-//            let httpResponse = response as? HTTPURLResponse
-//            print(httpResponse!)
-//        }
-//        guard let data = data else {
-//            print("No Network Access")
-//            return
-//        }
-//
-//        let decoder = JSONDecoder()
-//        let currentDay = try? decoder.decode(CurrentDayWeatherData.self, from: data)
-//        completionHandler(currentDay!)
-//        print(currentDay!)
-//    })
-//    dataTask.resume()
-//
-//
-//
-//}
-
     private init() {}
 }

@@ -19,3 +19,19 @@ struct Cities {
 struct Units {
     static let celcius = "metric"
 }
+
+public func covertDate(_ date: String?) -> String {
+    var fixDate = ""
+    let dateFormatter = DateFormatter()
+    dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+    dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+    if let originalDate = date {
+        if let newDate = dateFormatter.date(from: originalDate) {
+            dateFormatter.dateFormat = "EEEE"
+            fixDate = dateFormatter.string(from: newDate)
+        }
+    }
+    return fixDate
+}
+
+
